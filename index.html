@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>PENDULUM</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+      body {
+        background-color:black;
+      }
+      .pendulum {
+        position: absolute;
+        width: 220px;
+        height: 180px;
+        background-color: #f8c6cf;
+        top: 20%;
+        left: 50%;
+        border-radius: 5%;
+        align-items: center;
+        border-top: 15px solid #eee7d5;
+        transform: translate(-50%, -50%);
+      }
+
+      .pendulum_box {
+        display: flex;
+        padding: 120px 0 0 10px;
+        position: absolute;
+        flex: 1;
+      }
+
+      .ball {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color:palevioletred;
+        position: relative;
+        transform-origin: 50% -300%;
+      }
+
+      .ball::before {
+        content: "";
+        width: 2px;
+        height: 120px;
+        background-color: #fffeff;
+        left: 18px;
+        top: -120px;
+        position: absolute;
+      }
+
+      .ball.first {
+        animation: firstball 0.9s alternate ease-in infinite;
+      }
+
+      @keyframes firstball {
+        0% {
+          transform: rotate(35deg);
+        }
+        50% {
+          transform: rotate(0deg);
+        }
+      }
+
+      .ball.last {
+        animation: lastball 0.9s alternate ease-out infinite;
+      }
+
+      @keyframes lastball {
+        50% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(35deg);
+        }
+      }
+      h2 {
+        animation: type 20s steps(85) infinite;
+        overflow: hidden;
+        white-space: nowrap;
+        font-family:'Courier New', Courier, monospace;
+        border-right: 3px solid palevioletred;
+        color:palevioletred;
+        font-size:20px;
+        position:absolute;
+        margin-bottom: 2rem;
+      }
+      body {
+        color:palevioletred;
+        margin-top: 18%;
+        font-family: serif;
+        margin-left: 35%;
+      }
+
+      @keyframes type {
+        0% {
+          width: 0ch;
+        }
+        100% {
+          width: 90ch;
+        }
+      }
+
+      p {
+        color: #f8c6cf;
+        margin-top: 30%;
+        margin-left: 5%;
+        position:absolute;
+        font-size:20px;
+        font-family: cursive;
+      }
+
+     
+    </style>
+  </head>
+  <body>
+    <div class="pendulum">
+      <div class="pendulum_box">
+        <div class="ball first"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball last"></div>
+      </div>
+    </div>
+    <h2>
+      Can't know what's high </br>'Til you been down so low... <br />
+      The future's bright </br>Lit up with no where to go<br/>
+  
+To and fro the pendulum throws</br>
+We are here and then we go.</br>
+My shadow left me long ago</br>
+Understand what we don't know</br>
+This might pass, this might last, this may grow</br>
+Easy come easy go</br>
+Easy left me a long time ago</br>
+I'm in the fire, but I'm still cold</br>
+Nothing works, works for me anymore</br>
+To and fro the pendulum throws</br>
+To and fro the pendulum throws</br>
+
+</h2>
+    </h2>
+  </body>
+  <p>
+    <b><em>Just for fun by Kruthika ♡ </em></b>
+  </p>
+  <a href="#"><b><en></en></b></a>
+</html>
